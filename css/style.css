@@ -26,7 +26,7 @@ h3 {
 }
 p { 
   font-size: 16px;
-  font-weight: 100;
+  font-weight: 300;
 }
 body {
   color: #333333;
@@ -34,7 +34,7 @@ body {
 }
 /* #fp-nav ul li a span {background: #fff;} */
 /* 공통스타일 */
-section[id ^= "main_"] {
+div[id ^= "main_"] {
   width: 100%;
   height: 100vh;
   max-width: 1920px;
@@ -43,6 +43,7 @@ section[id ^= "main_"] {
   background-position: center;
   background-size: cover;
 }
+
 .img_box {
   width: 100%;
   height: 1050px;
@@ -51,8 +52,11 @@ section[id ^= "main_"] {
   width: 1400px;
   margin: 0 auto;
   position: relative;
-  top: 0;
+  top: -10%;
   text-align: center;
+}
+.text_box > h2 {
+  margin-top: 130px;
 }
 .text_box > h3 {
   margin-top: 70px;
@@ -87,6 +91,7 @@ position: relative;
 #main_header h1 {
 position: absolute;
 left: 0; top: 40px;
+z-index: 9999999;
 /* transform: translateY(-50%); */
 }
 .bg {
@@ -115,21 +120,22 @@ right: 20px;
 #gnb .depth1 {
 box-sizing: border-box;
 overflow: hidden;
-/* outline: 1px solid green; */
+/* outline: 1px solid blue; */
 margin: 0 auto;
 background: none;
 font-size: 18px;
 font-weight: 300;
+height: 200px;
 }
 #gnb .depth1 > li {
 float: left;
 text-align: center;
 /* width: 20%; */
-/* outline: 1px solid green; */
+/* outline: 1px solid red; */
 /* margin-right: 30px; */
 /* margin-bottom: 10px; */
 background: none;
-/* height: 180px; */
+/* height: 300px; */
 }
 #gnb .depth1 > li,
 #gnb .depth2 > li,
@@ -152,13 +158,8 @@ font-size: 15px;
 background: none;
 display: none;
 box-sizing: border-box;
-/* outline: 1px solid blue; */
-height: 165px;
 }
-#gnb .depth2 > li {
-  margin-bottom: -5px;
-  /* outline: 1px solid red; */
-}
+#gnb .depth2 > li {margin-bottom: -5px;}
 
 #gnb .depth2 > li > a {
 display: block;
@@ -193,7 +194,18 @@ color: transparent;
 background: #357CBE;
 height: 2px;
 }
-
+/* #gnb .depth2 > li > a:after{
+position: absolute;
+bottom: -5px;
+left: 0;
+right: 0;
+margin: auto;
+width: 0%;
+content: '.';
+color: transparent;
+background: #357CBE;
+height: 2px;
+} */
 #gnb ul li a:hover:after{width: 100%;}
 #gnb .depth2 > li > a:hover {
 font-weight: 500;
@@ -224,7 +236,6 @@ top: 15px;
   border: none;
   color: #000;
 }
-
 /* 언어 선택 */
 #lang {
 /* outline: 1px solid red; */
@@ -259,28 +270,47 @@ color: #fff;
 }
 
 /* 메인 비주얼 */
-#full-page #main_visual {
-  background-image: url(../images/main_visual_bg.jpg);
-  /* height: 1000px; */
-}
 
-#main_visual .main_text_box {
-  width: 1400px;
-  top: 50%;
-  transform: translateY(-50%);
+.slide1{
+  background-image: url(../images/main_visual_bg.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  max-height: 1980px;
+}
+.slide2 {
+  background-image: url(../images/main_visual_2.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  max-height: 1980px;
+}
+.slide3 {
+  background-image: url(../images/main_visual_3.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  max-height: 1980px;
+}
+.fp-tabelCell{
+  width: 100%;
+}
+.main_text_box {
+  width: 100%;
+  position: relative;
   margin: 0 auto;
   color: #fff;
-  /* outline: 2px solid red; */
+  outline: 2px solid red;
+  text-align: right;
+  padding-right: 40px;
+  /* left: 50%;
+  transform: translateX(-50%); */
 }
-#main_visual  .main_text_box > h1 > span:first-child {
-  position: relative;
-  /* top: 200px; */
-  left: 400px;
-}
-#main_visual .main_text_box > h1 > span:last-child {
-  position: relative;
-  /* top: 220px; */
-  left: 600px;
+.main_text_box h1 {
+  /* font-size: 38px; */
 }
 
 /* 퀵 서비스 */
@@ -295,6 +325,7 @@ margin: 0 auto;
 /* margin-top: -200px; */
 bottom: 0px;
 background: rgba(204, 204, 204, 0.3);
+z-index: 999;
 }
 #quick_service img {
   width: 30px;
@@ -327,14 +358,8 @@ bottom: 7px;
 /* 대표상품 */
 #main_products {
 background-image: url(../images/main_products_bg.jpg);
-/* height: 880px; */
 }
-#main_products .text_box {
-/* width: 1400px; */
-/* height: 156px; */
-top: -75px;
-/* outline: 1px solid blue; */
-}
+
 #main_products .line {
   background: #333;
 }
@@ -437,7 +462,7 @@ font-weight: bold;
   background-image: url(../images/main_intro_bg.png);
 }
 #main_intro .text_box {
-  top: -75px;
+  /* top: -75px; */
   color: #fff;
   text-align: center;
 }
@@ -450,6 +475,9 @@ font-weight: bold;
   position: relative;
   margin-bottom: 10px;
   /* outline: 1px solid red; */
+}
+#main_intro .intro_box h3 {
+  font-weight: 500;
 }
 #main_intro  .intro_box > .trust {
   width: 410px;
@@ -525,7 +553,7 @@ font-weight: bold;
 }
 #main_process .text_box {
   color: #fff;
-  top: -75px;
+  /* top: -75px; */
 }
 #main_process .process_slider {
   width: 1400px;
@@ -616,7 +644,7 @@ font-weight: bold;
   /* margin-bottom: 30px; */
   /* top: -75px;
   bottom: -30px; */
-  top: -17%;
+  /* top: -17%; */
 }
 #main_chart .chart_box {
   width: 1400px;
@@ -697,7 +725,7 @@ font-weight: bold;
 }
 #main_notice .text_box {
 color: #fff;
-top: -75px;
+/* top: -75px; */
 /* margin-bottom: -50px; */
 }
 #main_notice .text_box .line {
@@ -734,10 +762,10 @@ background: #fff;
   border-bottom: 1px solid #357cbe;
   margin: 0 40px 0 40px;
   padding: 10px;
-  font-weight: 200;
+  font-weight: 300;
 }
 #main_notice .notice_box > li:first-child {
-  margin-top: 40px;
+  margin-top: 29px;
 }
 #main_notice .notice_box > li:last-child {
   border-bottom: none;
@@ -943,3 +971,56 @@ line-height: 24px;
 }
 #fp-nav ul li:last-child{display: none;}
 .fp-sr-only:last-child{display: none;}
+.fp-controlArrow{ display: none;}
+#fullpage .section {
+  transition: all 0.5s ease-in-out;
+}
+.transparent {opacity:0.5;}
+
+
+
+.mySlide {display: none;}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: none;
+  transition: background-color 0.6s ease;
+}
+
+.active2 {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 5.5s;
+}
+
+@-webkit-keyframes fade {
+  0% {opacity: .2} 
+  25% {opacity: .4}
+  50% {opacity: .6}
+  75% {opacity: .8}
+  100% {opacity: 1}
+}
+
+@keyframes fade {
+  0% {opacity: .2} 
+  25% {opacity: .4}
+  50% {opacity: .6}
+  75% {opacity: .8}
+  100% {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
