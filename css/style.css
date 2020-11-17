@@ -216,6 +216,9 @@ input {
 color: rgb(175, 173, 173);
 vertical-align: middle;
 }
+input:focus{
+  outline: none;
+}
 input.img_button {
 background: url( "../images/search1.png" ) no-repeat;
 border: none;
@@ -232,7 +235,7 @@ right: 134px;
 top: 15px;
 }
 .fund_search {
-  padding-left: 5px;
+  padding-left: 3px;
   border: none;
   color: #000;
 }
@@ -299,18 +302,14 @@ color: #fff;
   width: 100%;
 }
 .main_text_box {
-  width: 100%;
+  width: 100%!important;
   position: relative;
   margin: 0 auto;
   color: #fff;
-  outline: 2px solid red;
-  text-align: right;
-  padding-right: 40px;
-  /* left: 50%;
-  transform: translateX(-50%); */
-}
-.main_text_box h1 {
-  /* font-size: 38px; */
+  /* outline: 2px solid red; */
+  text-align: center;
+  /* text-align: right; */
+  top: 50%;
 }
 
 /* 퀵 서비스 */
