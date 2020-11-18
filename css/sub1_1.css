@@ -177,7 +177,7 @@ display: block;
 #sub1_1_lnb ul li a:after,
 #sub1_1_lnb ul li a:before{transition: all .5s;}
 
-#gnb ul li a:hover {color: #357CBE;}
+/* #gnb ul li a:hover {color: #357CBE;} */
 
 /* stroke */
 #gnb ul li a{position: relative;}
