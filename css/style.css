@@ -90,7 +90,7 @@ position: relative;
 }
 #main_header h1 {
 position: absolute;
-left: 0; top: 40px;
+left: 1px; top: 13px;
 z-index: 9999999;
 /* transform: translateY(-50%); */
 }
