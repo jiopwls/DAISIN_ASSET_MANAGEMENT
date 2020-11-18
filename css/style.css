@@ -209,12 +209,13 @@ margin-left: 2px;
 #search {
 position: absolute;
 float: right;
-margin-right: 100px;
+margin-right: 80px;
 right: 134px;
 top: 15px;
 }
 .fund_search {
-  padding-left: 1px;
+  /* padding-left: 1px; */
+  padding: 3px 3px 3px 3px;
   border: none;
   color: #000;
 }
