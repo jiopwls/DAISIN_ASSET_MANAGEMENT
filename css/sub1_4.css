@@ -85,7 +85,7 @@ position: relative;
 }
 #main_header h1 {
 position: absolute;
-left: 0; top: 47px;
+left: 9px; top: 29px;
 /* transform: translateY(-50%); */
 }
 .bg {
@@ -109,7 +109,7 @@ box-sizing: border-box;
 /* z-index: 9999; */
 width: 780px;
 float: right;
-right: 20px;
+right: 11.5px;
 }
 #gnb .depth1 {
 box-sizing: border-box;
@@ -214,13 +214,13 @@ input.img_button {
   width: 17px;
   height: 17px;
   cursor: pointer;
-  margin-left: 2px;
+  margin-left: 2.5px;
 }
 #search {
   position: absolute;
   float: right;
   margin-right: 80px;
-  right: 134px;
+  right: 126px;
   top: 15px;
 }
 .fund_search {
@@ -236,7 +236,7 @@ input.img_button {
     /* right: -100px; */
     height: 30px;
     position: absolute;
-    right: 57px;
+    right: 45.5px;
     top: 15px;
     }
     #lang a {
