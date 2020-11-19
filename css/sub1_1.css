@@ -298,6 +298,7 @@ input.img_button {
   color: #707070;
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: normal;
+  box-shadow:  14px 14px 54px #e6e6e6;
   /* outline: 1px solid purple; */
 }
 #sub1_1_lnb li a {
@@ -503,9 +504,14 @@ img {
 /* Footer */
 footer {
   background: #3b3b3b;
+  height: 214px;
   color: #828282;
   min-width: 1400px;
-  /* margin-top: 10px; */
+  overflow: hidden;
+}
+
+footer p {
+  font-size: 14px;
 }
 #footer_top {
   text-align: center;
@@ -526,10 +532,26 @@ footer {
   margin: 0 auto;
   padding: 20px 20px;
   padding-bottom: 30px;
-  overflow: hidden;
+  position: relative;
 }
 #footer_1400 > div {
   float: left;
+}
+#footer_1400 > div:first-child {
+  position: absolute;
+  left: 10px;
+}
+#footer_1400 > div:nth-child(2) {
+  position: absolute;
+  left: 278px;
+  outline: 3px solid green;
+}
+#footer_1400 > div:nth-child(3) {
+  position: absolute;
+  right: 213px;
+}
+#footer_1400 div a img{
+  margin-top: 19px;
 }
 .footer_info {
   padding: 0 100px;
@@ -537,10 +559,6 @@ footer {
   line-height: 24px;
   margin-top: 4px;
 }
-#footer_1400 div a img{
-  margin-top: 19px;
-}
-footer p {font-size: 14px;}
 #family_site:focus {
   border: none;
   outline: none;
