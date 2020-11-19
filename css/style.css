@@ -31,6 +31,7 @@ p {
 body {
   color: #333333;
   font-family: 'Noto Sans KR', sans-serif;
+  min-width: 1200px;
 }
 /* #fp-nav ul li a span {background: #fff;} */
 /* 공통스타일 */
@@ -39,9 +40,10 @@ div[id ^= "main_"] {
   height: 100vh;
   max-width: 1920px;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   background-position: center;
   background-size: cover;
+  min-width: 1400px;
 }
 
 .img_box {
@@ -328,6 +330,11 @@ background: rgba(204, 204, 204, 0.3);
 z-index: 999;
 height: 60px;
 }
+#quick_service .quick_service_box {
+  width: 1400px;
+  margin: 0 auto;
+  position: relative;
+}
 #quick_service img {
   width: 30px;
   height: 30px;
@@ -342,11 +349,18 @@ font-weight: 300;
 color: #fff;
 margin-top: 15px;
 height: 30px;
-/* padding-bottom: 15px; */
-/* top: 7px; */
+position: absolute;
 }
 
+#quick_service a:nth-child(1) {
+left: 0;
+}
+#quick_service a:nth-child(2) {
+left: 50%;
+transform: translateX(-50%);
+}
 #quick_service a:last-child {
+right: 0;
 border: none;
 }
 
