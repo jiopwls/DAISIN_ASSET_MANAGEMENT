@@ -544,7 +544,6 @@ footer p {
 #footer_1400 > div:nth-child(2) {
   position: absolute;
   left: 278px;
-  outline: 3px solid green;
 }
 #footer_1400 > div:nth-child(3) {
   position: absolute;
