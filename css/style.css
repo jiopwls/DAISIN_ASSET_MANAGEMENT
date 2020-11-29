@@ -258,7 +258,7 @@ color: #fff;
 /* 메인 비주얼 */
 
 .slide1{
-  background-image: url(../images/main_visual_02.png);
+  background-image: url(../images/main_visual_02.jpg);
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -267,7 +267,7 @@ color: #fff;
   /* max-height: 1980px; */
 }
 .slide2 {
-  background-image: url(../images/main_visual_04.png);
+  background-image: url(../images/main_visual_04.jpg);
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -276,7 +276,7 @@ color: #fff;
   /* max-height: 1980px; */
 }
 .slide3 {
-  background-image: url(../images/main_visual_06.png);
+  background-image: url(../images/main_visual_06.jpg);
   background-size: cover;
   background-position: center;
   width: 100%;
