@@ -478,7 +478,7 @@ font-weight: bold;
 
 /* 회사소개 */
 #main_intro {
-  background-image: url(../images/main_intro_bg.png);
+  background-image: url(../images/main_intro1_bg.jpg);
 }
 #main_intro .text_box {
   /* top: -75px; */
